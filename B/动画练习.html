@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*动画*/
+        #a{
+            width: 100px;
+            height: 280px;
+            /*渐变色*/
+            background:linear-gradient(90deg,blue,red);
+        }
+        /*@keyframes 后面自己随便写名字    @keyframes是定义        先定义后执行*/
+        @keyframes name {
+            /*0%{*/
+                /*width: 100px;*/
+            /*}*/
+            /*50%{*/
+                /*width: 500px;*/
+            /*}*/
+            /*100%{*/
+                /*width: 1200px;*/
+            /*}*/
+            /*动画开始*/
+            from{
+                width: 100px;
+            }
+            /*动画结束*/
+            to{
+                width: 1200px;
+            }
+        }
+        /*!*经过哪个标签  后面就写hover*!     hover是执行动画*/
+        #a:hover{
+            animation:name 1s;
+            width: 1200px;
+        }
+        /*@-o-keyframes{}    支持苹果浏览器*/
+        /*@-moz-keyframes{}    支持火狐浏览器*/
+        /*@-webkit-keyframes{} 支持谷歌浏览器*/
+    </style>
+</head>
+<body>
+    <!--动画 transition css3新特性-->
+    <div id="a"></div>
+</body>
+</html>

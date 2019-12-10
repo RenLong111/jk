@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+       /*第一个框*/
+        #one{
+            width: 100%;
+            height:5.5%;
+            display:flex;
+        }
+        #one .one1{
+            width: 10%;
+            height:100%;
+            font-size: 25px;
+            line-height: 44px;
+            text-align:center;
+        }
+        #one .one2{
+            width:80%;
+            height:100%;
+            display: flex;
+            margin-left: 10px;
+            line-height: 44px;
+        }
+        #one .one2 .shang{
+            width:25%;
+            height:100%;
+            line-height:44px;
+            text-align: center;
+        }
+        /*图片栏*/
+        #print{
+            width: 100%;
+            height: 45%;
+            /*相对定位*/
+            position: relative;
+        }
+        #print .print1{
+            width: 100%;
+            height: 100%;
+            /*绝对定位*/
+            position:absolute;
+        }
+        /*商品详情栏*/
+        .detolis{
+            height:5%;
+            width: 95%;
+            margin: auto;
+            font-size: 15px;
+        }
+        .detolis1{
+            height:3%;
+            width: 95%;
+            margin: auto;
+            line-height:24px;
+            font-size:12px;
+            color: #A6A6A6;
+        }
+        .detolis2{
+            height:3%;
+            width: 95%;
+            display: flex;
+        }
+        .detolis2 .price{
+            height:100%;
+            width: 20%;
+            display: flex;
+            color: #E31436;
+            margin-left:10px;
+        }
+        .detolis2 .price1{
+            height:100%;
+            width: 20%;
+            color: #A6A6A6;
+            font-size:12px;
+            line-height: 28px;
+        }
+        .detolis2 .price2{
+            height:100%;
+            width: 20%;
+        }
+        /*秒杀时间栏*/
+        .timefence{
+            height:3.5%;
+            width: 60%;
+            background:linear-gradient(90deg,red, #ff5800);
+            margin-top: 5px;
+            margin-left: 10px;
+            line-height:32px;
+            font-size:12px;
+            /*background-color: #ee4d00;*/
+            color: #FFFFFF;
+        }
+        .detolis2 .diaopai{
+            height:100%;
+            width: 12%;
+            color: #A6A6A6;
+            margin-left:10px;
+            font-size:14px;
+            line-height: 24px;
+        }
+        .detolis2 .diaopa2{
+            height:3%;
+            width: 20%;
+            color: #A6A6A6;
+            font-size:12px;
+            line-height: 30px;
+            /*加下划线*/
+            text-decoration-line:line-through;
+        }
+        .detolis2 .diaopa2{
+            height:3%;
+            width: 20%;
+            color: #A6A6A6;
+            font-size:12px;
+            line-height: 30px;
+            /*加下划线*/
+            text-decoration-line:line-through;
+        }
+        .miao{
+            height:1.5%;
+            width: 7.5%;
+            border:solid 1px red;
+            margin-left: 10px;
+            font-size: 12px;
+            line-height:10px;
+            color: red;
+            /*边框圆角*/
+            border-radius:3px 3px 3px 3px;
+        }
+        .x{
+            height:1%;
+            width: 100%;
+            background-color: #E8ECF0;
+        }
+        /*领券区*/
+        .lingquan{
+            width:100%;
+            height: 5%;
+
+        }
+        .lingquan .lingquan1{
+            width:100%;
+            height:50%;
+            display: flex;
+            padding-top:10px;
+        }
+        .lingquan .lingquan1 .lingquan2{
+            width:10%;
+            height:100%;
+            color: #E31436;
+            padding-left:10px;
+            /*margin-left: 10px;*/
+            /*margin-top:10px;*/
+        }
+        .lingquan .lingquan1 .lingquan3{
+            width:16%;
+            height:100%;
+            color: #FFFFFF;
+            font-size: 13px;
+            line-height: 20px;
+            padding-left:10px;
+            margin-left: 10px;
+            background-color: #b90000;
+        }
+        /*送至地点*/
+      .songzhi{
+            width:100%;
+            height:5%;
+            line-height:40px;
+            padding-left:10px;
+            border-bottom: solid 1px #E8ECF0;
+
+      }
+        ul{
+            width:100%;
+            height:5%;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul li{
+            width:30%;
+            height:50%;
+            /*display: flex;*/
+            display: inline-block;
+            /*flex-wrap: wrap;*/
+            padding-left: 10px;
+            font-size: 11px;
+        }
+        ul li div{
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border-radius:5px 5px;
+            background-color: #FF5000;
+        }
+        /*商品种类*/
+        .zhonglei{
+            width: 100%;
+            height: 40%;
+
+        }
+        .zhonglei .zhonglei1{
+            width: 100%;
+            height: 8%;
+            /*display: flex;*/
+            line-height: 25px;
+            padding-left:10px;
+            font-size: 14px;
+            border-bottom: solid 1px  #E8ECF0;
+        }
+        .zhonglei .zhonglei2{
+            width: 100%;
+            height: 17%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .zhonglei .zhonglei2 .zhaopian{
+            width: 15%;
+            height: 100%;
+            margin-left: 10px;
+            /*display: flex;*/
+            /*flex-wrap: wrap;*/
+        }
+        .zhonglei .zhonglei2 .zhaopian .zhaopian1{
+            width: 100%;
+            height: 50%;
+            line-height: 27px;
+            /*margin-left: 10px;*/
+            font-size: 13px;
+        }
+        .zhonglei .zhonglei2 .zhaopian .zhaopian1 .zhao{
+            color:#FF5000;
+        }
+        .zhonglei .zhonglei2 .zhaopian .zhaopian1 .zhao1{
+           margin-left: 5px;
+        }
+        .zhonglei .bb{
+            width: 100%;
+            height:40%;
+            margin-left: 10px;
+        }
+        .zhonglei .yanse{
+            width: 100%;
+            height: 20%;
+            margin-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .zhonglei .yanse .yanse1{
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .zhonglei .yanse .yanse1 .yanse2{
+            width: 30%;
+            height: 100%;
+            border: solid 1px #cccccc;
+            border-radius:5px 5px 5px 5px;
+            background-color:#f8f8f8;
+            line-height: 27px;
+            /*文本水平居中*/
+            text-align: center;
+        }
+        .zhonglei .shuliang{
+            width: 100%;
+            height: 16%;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 40px;
+            text-align: center;
+        }
+        .zhonglei .shuliang .shuliang1{
+            width: 13%;
+            height: 60%;
+            padding: 10px;
+        }
+        .zhonglei .shuliang .shuliang2{
+            width: 30%;
+            height: 60%;
+            padding: 10px;
+            display: flex;
+        }
+        .zhonglei .shuliang .shuliang2{
+            width: 40%;
+            height: 60%;
+            padding: 10px;
+            display: flex;
+        }
+        .zhonglei .shuliang .shuliang2 .jia{
+            width: 30%;
+            height:100%;
+            color: #696969;
+            font-size: 30px;
+            border: solid 1px #cccccc;
+            background-color:#f8f8f8;
+        }
+        .zhonglei .shuliang .shuliang2 .jian{
+            width: 40%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <a href="dangdangshouyei.html" style=" text-decoration:none; " "><div class="one1"><</div></a>
+        <div class="one2">
+            <div class="shang">商品</div>
+            <div class="shang">详情</div>
+            <div class="shang">评论</div>
+            <div class="shang">推荐</div>
+        </div>
+        <div class="one1"><img src="../img/dian.png" width="100%" height="100%"/></div>
+    </div>
+    <div id="print">
+        <div class="print1"><img src="../img/mote.jpg" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/mote.jpg" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/mote.jpg" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/mote.jpg" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/mote.jpg" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/dian.png" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/dian.png" width="100%" height="100%"/></div>
+        <div class="print1"><img src="../img/mote.jpg" width="100%" height="100%"/></div>
+    </div>
+    <div class="detolis">女包19新款mini虎头斜挎单肩包明星同款百搭印花相机小方包BLL079_粉色</div>
+    <div class="detolis1">双12大促限时【1件2折】见店铺首页</div>
+    <div class="detolis2">
+        <div class="price">￥1.00</div>
+        <div class="price1">（0.06折）</div>
+        <div class="price2"><img src="../img/jiangjia.png" width="100%" height="100%"/></div>
+    </div>
+    <div class="timefence">秒杀 距结束还剩10:23:30</div>
+    <div class="detolis2">
+        <div class="diaopai">吊牌价</div>
+        <div class="diaopa2">￥199.00</div>
+    </div>
+    <div class="miao" >秒杀</div>
+    <div class="x"></div>
+    <div class="lingquan">
+        <div class="lingquan1">
+            <div class="lingquan2">领券</div>
+            <div class="lingquan3">400减80</div>
+            <div class="lingquan3">200减50</div>
+        </div>
+    </div>
+    <div class="songzhi">送至：天津&gt;天津市&gt;其他区县</div>
+    <ul>
+        <li><div></div> 商家发货&售后</li>
+        <li><div></div> 正品保障</li>
+        <li><div></div> 闪电发货</li>
+        <li><div></div> 不支持礼品卡</li>
+        <li><div></div> 支持7天无理由退货</li>
+    </ul>
+    <div class="x"></div>
+    <div class="zhonglei">
+        <div class="zhonglei1">选择 粉色</div>
+        <div class="zhonglei2">
+            <div class="zhaopian"><img src="../img/lv.jpg" width="100%" height="100%"/></div>
+            <div class="zhaopian">
+                <div class="zhaopian1 zhao">
+                    <div class="zhao">￥1.00</div>
+                </div>
+                <div class="zhaopian1">
+                    <div class="zhao1">粉色</div>
+                </div>
+            </div>
+            <div class="bb">颜色</div>
+        </div>
+        <div class="yanse">
+            <div class="yanse1">
+                <div class="yanse2">黑色</div>
+                <div class="yanse2">粉色</div>
+                <div class="yanse2">蓝色</div>
+            </div>
+            <div class="yanse1">
+                <div class="yanse2">棕色</div>
+                <div class="yanse2">灰色</div>
+                <div class="yanse2">红色</div>
+            </div>
+        </div>
+        <div class="x"></div>
+        <div class="x"></div>
+        <div class="shuliang">
+            <div class="shuliang1">数量：</div>
+            <div class="shuliang2">
+                <div class="jia">-</div>
+                <div class="jian">1</div>
+                <div class="jia">+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

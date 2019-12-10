@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="../css/iconfont.css" type="text/css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height:100%;
+            width:100%;
+        }
+        /*搜索框*/
+        #searchbox{
+           width: 100%;
+           height: 5.2%;
+           /*border: solid 1px #000000;*/
+           display: flex;
+       }
+        .iconfont{
+            font-size: 30px;
+            justify-content: space-between;
+            align-items:center ;
+            line-height: 35px;
+            /*margin: auto;*/
+        }
+        .iconfont{
+            font-size: 30px;
+            justify-content: space-between;
+            align-items:center ;
+            line-height: 35px;
+            /*margin: auto;*/
+        }
+        .searchbox1{
+            width: 14%;
+            /*border: solid 1px #000000;*/
+            background-size: 100% 100%;
+            line-height: 40px;
+        }
+        .searchbox2{
+            width: 76%;
+            border: solid 1px #FFFFFF;
+            line-height: 40px;
+            border-radius: 15px 15px 15px 15px;
+        }
+        #searchbox .searchbox2 .searchbox3{
+            width: 100%;
+            height: 75%;
+            /*border: solid 1px #000000;*/
+            justify-content: space-between;
+            align-items:center ;
+            margin: auto;
+            /*line-height: 40px;*/
+            border-radius: 15px 15px 15px 15px;
+            margin-top: 4px;
+            background-color:#E8ECF0;
+        }
+        .input1{
+            margin-bottom: 5px;
+            background-color:#E8ECF0;
+        }
+        .iconfont{
+            width: 50px;
+            height: 40px;
+        }
+        .aa{
+            font-size: 15px;
+        }
+        bb{
+            width: 10px;
+            height: 10px;
+        }
+        h2{
+            width: 100%;
+            height: 17%;
+            /*border: solid 1px #000000;*/
+        }
+        ol{
+            width: 100%;
+            height: 18.5%;
+            /*border: solid 1px #000000;*/
+            list-style: none;
+            /*弹性盒子*/
+            display: flex;
+            /*盒子中水平方向的空白分布*/
+            justify-content: space-between;
+            /*盒子中的换行元素*/
+            flex-wrap: wrap;
+            /*盒子竖直方向上，空白的分布*/
+            align-content: space-between;
+        }
+        ol li{
+            width: 19.3%;
+            height: 49%;
+            /*border: solid 1px #000000;*/
+        }
+        h3{
+            width: 100%;
+            height: 6.1%;
+            /*border: solid 1px #000000;*/
+        }
+        h4{
+            width: 100%;
+            height: 3%;
+            /*border: solid 1px #000000;*/
+            text-align: center;
+            color: grey;
+        }
+        /*特价区*/
+        #sale{
+            width: 100%;
+            height: 26.8%;
+            /*border: solid 1px #000000;*/
+            display: flex;
+            /*盒子中 水平方向的空白 分布*/
+            justify-content: space-between;
+
+        }
+        #sale .sale1{
+            width: 30%;
+            /*border: solid 1px #000000;*/
+            float: left;
+        }
+        #sale .sale1 .sale2{
+            width: 100%;
+            height: 59%;
+            /*border: solid 1px #000000;*/
+            float: left;
+        }
+        #sale .sale1 .sale3{
+            width: 100%;
+            height: 16%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /*line-height: 20px;*/
+            font-size: 10px;
+        }
+        #sale .sale1 .sale4{
+            width: 100%;
+            height: 10%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            color: red;
+        }
+        #sale .sale1 .sale5{
+            width: 100%;
+            height: 10%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            color: #BABABA;
+            font-size: 10px;
+            margin: auto;
+            text-decoration-line:line-through;
+            padding-top: 2.8px;
+            text-indent:3px;
+        }
+        h5{
+            width: 100%;
+            height: 14.8%;
+            /*border: solid 1px #000000;*/
+        }
+        h6{
+            width: 100%;
+            height: 6.1%;
+            /*border: solid 1px #000000;*/
+        }
+        .dandan{
+            width: 100%;
+            height: 1.8%;
+            /*border: solid 1px #000000;*/
+            font-weight: 500px;
+            text-indent:10px;
+            /*水平方向居中*/
+            text-align: center;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        .tushu{
+            width: 100%;
+            height: 15%;
+            /*border: solid 1px #000000;*/
+        }
+        ul{
+            width: 100%;
+            height: 76%;
+            /*border: solid 1px #000000;*/
+            display: flex;
+            /*盒子中 水平方向的空白 分布*/
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        ul li{
+            width: 32.5%;
+            height: 32%;
+            /*border: solid 1px #000000;*/
+            float: left;
+        }
+        ul li .neirong{
+            width: 100%;
+            height: 6%;
+            /*border: solid 1px #000000;*/
+            float: left;
+        }
+        ul li .neirong1{
+            width: 100%;
+            height: 11%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            text-indent: 30px;
+            font-size: 13px;
+        }
+        ul li .neirong11{
+            width: 100%;
+            height: 11%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            text-indent: 40px;
+            font-size: 13px;
+        }
+        ul li .neirong2{
+            width: 100%;
+            height: 7%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            text-indent: 37px;
+            font-size: 6px;
+            color: red;
+        }
+        ul li .neirong22{
+            width: 100%;
+            height: 7%;
+            /*border: solid 1px #000000;*/
+            float: left;
+            text-indent: 22px;
+            font-size: 6px;
+            color: red;
+        ul li .neirong3{
+            width: 100%;
+            height: 60%;
+            /*border: solid 1px #000000;*/
+            float: left;
+        }
+        /*#fuzhuang{*/
+            /*width: 100%;*/
+            /*height: 40%;*/
+            /*border: solid 1px #000000;*/
+        /*}*/
+        /*ul{*/
+            /*width: 100%;*/
+            /*height: 1.8%;*/
+            /*border: solid 1px #000000;*/
+            /*float: left;*/
+            /*list-style: none;*/
+            /*line-height: 13px;*/
+            /*text-align: center;*/
+            /*display: inline-block;*/
+        /*}*/
+        /*ul li.dandan{*/
+            /*width: 40%*/
+            /*border: solid 1px #000000;*/
+            /*float: left;*/
+        /*}*/
+        /*ul li.dianzisu{*/
+            /*width: 20%*/
+            /*border: solid 1px #000000;*/
+            /*float: left;*/
+        }
+        #lin{
+            width:100%;
+            height:5.3%;
+            /*border: solid 1px #000000;*/
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+        }
+        .aaaa{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+ <div id="searchbox">
+    <div class="searchbox1"><img src="../img/dangdangtubiao.png" width="100%" height="100%"/></div>
+    <div class="searchbox2">
+        <div class="searchbox3"><span class="iconfont aa" >&#xe613;</span><input class="input1" type="number" placeholder="平均分" style="border: none"></div>
+    </div>
+     <a href="dangdang4.html" class="aaaa"><div class="searchbox1"><span class="iconfont">&#xe747;</span></div></a>
+ </div>
+  <a href="dangdang2.html"><h2><img src="../img/mate30.jpg" width="100%" height="100%"/></h2></a>
+ <ol>
+    <li><img src="../img/cxb.png" width="100%" height="100%"/></li>
+    <li><img src="../img/xsb.png" width="100%" height="100%"/></li>
+    <li><img src="../img/tsb.png" width="100%" height="100%"/></li>
+    <li><img src="../img/tjss.png" width="100%" height="100%"/></li>
+    <li><img src="../img/fuzhuang.jpg" width="100%" height="100%"/></li>
+    <li><img src="../img/ddcs.png" width="100%" height="100%"/></li>
+    <li><img src="../img/pt.png" width="100%" height="100%"/></li>
+    <li><img src="../img/ljzx.png" width="100%" height="100%"/></li>
+    <li><img src="../img/yyd.jpg" width="100%" height="100%"/></li>
+    <li><img src="../img/jrcx.png" width="100%" height="100%"/></li>
+ </ol>
+ <h3><img src="../img/jinri.jpg" width="100%" height="100%"/></h3>
+ <h4>03时40分13秒</h4>
+ <div id="sale" >
+    <div class="sale1">
+        <div class="sale2"><img src="../img/yifu.jpg" width="100%" height="100%"/></div>
+        <div class="sale3">精品女包1元秒杀，限量抢购，抢完即止！</p></div>
+        <div class="sale4">￥1</div>
+        <div class="sale5">￥99.00</div>
+    </div>
+    <div class="sale1">
+        <div class="sale2"><img src="../img/guigu.jpg" width="100%" height="100%"/></div>
+        <a href="dangdang3.html"><div class="sale3">鬼谷子+人性的弱点+狼道+羊皮卷+墨菲定律</div></a>
+        <div class="sale4">￥39</div>
+        <div class="sale5">￥300.40</div>
+    </div>
+    <div class="sale1">
+        <div class="sale2"><img src="../img/maoyi.jpg" width="100%" height="100%"/></div>
+        <div class="sale3">超火毛衣！限时秒杀100件！</div>
+        <div class="sale4">￥49</div>
+        <div class="sale5">￥488.00</div>
+    </div>
+ </div>
+ <h5><img src="../img/wangluo.jpg" width="100%" height="100%"/></h5>
+ <h6><img src="../img/zhongwen.jpg" width="100%" height="100%"/></h6>
+ <div class="dandan">当当书城&nbsp电子书&nbsp网络文字</div>
+ <div class="tushu"><img src="../img/12.12.jpg" width="100%" height="100%"/></div>
+ <ul>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">文学艺术</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/momotou.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong11">电子书</p>
+        <p class="neirong22">VIP买一年赠两年</p>
+        <p class="neirong3"><img src="../img/yueduka.jpg" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">万种图书</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/guaijie.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">悦享生活</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/chitou.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">人文社交</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/wendu.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">中小学教辅</p>
+        <p class="neirong2">美满79减30</p>
+        <p class="neirong3"><img src="../img/ertong.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">科技图书</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/wanwu.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">成功励志</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/jiafang.png" width="100%" height="100%"/></p>
+    </li>
+    <li>
+        <p class="neirong"></p>
+        <p class="neirong1">考试图书</p>
+        <p class="neirong2">5折封顶</p>
+        <p class="neirong3"><img src="../img/8taojuan.png" width="100%" height="100%"/></p>
+    </li>
+ </ul>
+ <div style="height:4.8%">
+     <img src="../img/xiebao.jpg" width="100%" height="100%"/>
+ </div>
+ <div class="dandan">服装品牌榜单&nbsp服装上新&nbsp服装馆</div>
+ <div class="tushu"><img src="../img/fuzhuangxiebao.jpg" width="100%" height="100%"/></div>
+ <!--<div id="fuzhuang">-->
+     <!--<div class="nuzhuang></div>-->
+     <!--<div class="tongzhuang></div>-->
+     <!--<div class="yishe></div>-->
+ <!--</div>-->
+
+ <div id="lin"><img src="../img/zhidemai.png" width="100%" height="100%"/></div>
+</body>
+</html>

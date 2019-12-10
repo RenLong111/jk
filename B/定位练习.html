@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        /*忽略滚动轴定位*/
+        /*#lin{*/
+            /*width:780px;*/
+            /*height:100px;*/
+            /*background:linear-gradient(90deg,blue,red);*/
+            /*position: fixed;*/
+            /*left: 0px;*/
+            /*top: 0px;*/
+            /*position:relative;*/
+            /*position: fixed;*/
+            /*left: 0px;*/
+            /*bottom: 0px;*/
+        /*}*/
+        /*.n{*/
+            /*width: 180px;*/
+            /*height: 1000px;*/
+            /*border: solid 1px black;*/
+        /*}*/
+
+        图片覆盖  相对定位 绝对定位
+        #wrap{
+            width: 800px;
+            height: 500px;
+            border: solid 1px #000000;
+            margin: auto;
+            /*相对定位*/
+            position: relative;
+
+        }
+        #wrap .name{
+            width: 800px;
+            height: 500px;
+            border: solid 1px #000000;
+            margin: auto;
+            /*绝对定位*/
+            position:absolute;
+        }
+        #wrap .name:nth-child(1){
+            background-color: #FF5000;
+        }
+        #wrap .name:nth-child(2){
+            background-color: blue;
+            /*z轴覆盖   哪个图片象往上提就哪个上面*/
+            z-index:10
+
+        }
+        #wrap .name:nth-child(3){
+            background-color: darkblue;
+        }
+        #wrap .name:nth-child(4){
+            background-color: lemonchiffon;
+        }
+        相对定位
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #one{
+            width:100%;
+            height:100%;
+            position:relative;
+            left: 0px;
+            top: 0px;
+        }
+        .waikuang{
+            width: 100%;
+            height: 18%;
+            border: solid 1px black;
+            background-color: #E31436;
+            position: relative;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--/*忽略滚动轴定位*/-->
+    <!--<div style="height: 2000px">-->
+    <!--<div id="lin"></div>-->
+    <!--</div>-->
+    <!--<div class="n"></div>-->
+    图片覆盖
+    <div id="wrap">
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+    </div>
+    <div id="one">
+        <div class="waikuang"></div>
+    </div>
+
+</body>
+</html>

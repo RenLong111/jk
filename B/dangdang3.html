@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        /*秒杀*/
+        #seckill{
+            height: 5.5%;
+            display: flex;
+        }
+        #seckill .seckill1{
+            width: 10.9%;
+            height: 100%;
+
+        }
+        #seckill .seckill2{
+            width: 89.1%;
+            height: 100%;
+            margin: auto;
+            /*文字大小*/
+            font-size: 18px;
+            color: #696969;
+            margin-left:150px;
+            /*文字居中*/
+            /*text-align: center;*/
+            /*文字高度*/
+            line-height: 44px;
+
+        }
+        /*时间栏*/
+        #time{
+            list-style: none;
+            height:5.5%;
+            background-color: #454545;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        #time .time1{
+            width: 19.1%;
+            height: 50%;
+            color: #FFFFFF;
+            text-align: center;
+            line-height:24px;
+            font-size: 12px;
+        }
+        .aa{
+            background-color: red;
+        }
+        /*选购框*/
+        #choose{
+            list-style: none;
+            height: 14%;
+            display: flex;
+            /*水平方向空白分布*/
+            justify-content:space-between;
+             /*换行元素*/
+            flex-wrap: wrap;
+            /*竖直空白分布*/
+            align-content: space-between;
+        }
+        #choose .choose1{
+            width: 24%;
+            height: 90%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        #choose .choose2{
+            list-style: none;
+            width: 70%;
+            height: 90%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #choose .choose2 .choose3{
+            width: 100%;
+            height: 40%;
+            color: #515151;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        /*#choose .choose2 .choose3 .aa{*/
+            /*!*鼠标放上变小手*!*/
+            /*cursor: pointer;*/
+            /*!*超出部分隐藏*!*/
+            /*overflow: hidden;*/
+            /*!*文本超出部分省略号表示*!*/
+            /*text-overflow: ellipsis;*/
+            /*文本空白换行*/
+            /*white-space: normal;*/
+            /*!*文字大小*!*/
+            /*font-size: 5px;*/
+        /*}*/
+        #choose .choose2 .choose4{
+            width: 100%;
+            height: 58%;
+            display: flex;
+        }
+        #choose .choose2 .choose4 .choose5{
+            width: 75%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #choose .choose2 .choose4 .choose5 .choose6{
+            width: 100%;
+            height: 65%;
+            display: flex;
+        }
+        #choose .choose2 .choose4 .choose5 .choose6 .choose61{
+            width: 30%;
+            height: 100%;
+            color: red;
+            line-height:38px;
+            font-size: 18px;
+        }
+        #choose .choose2 .choose4 .choose5 .choose6 .choose62{
+            width: 68%;
+            height: 100%;
+            margin-top:14px;
+            color: #707070;
+            font-size: 8px;
+            /*加下划线*/
+            text-decoration-line:line-through;
+        }
+
+        #choose .choose2 .choose4 .choose5 .choose7{
+            width: 100%;
+            height: 33%;
+            color: #535A69;
+            line-height:19px;
+            font-size: 10px;
+        }
+        #choose .choose2 .choose4 .choose8{
+            width: 23%;
+            height: 100%;
+            /*水平方向居中*/
+            justify-content: space-between;
+                /*垂直方向居中*/
+            align-items:center ;
+            margin: auto;
+            display: flex;
+        }
+        #choose .choose2 .choose4 .choose8 .choose9{
+            width: 100%;
+            height: 50%;
+            margin: auto;
+            background-color: #ff463c;
+            color: #FFFFFF;
+            /*文字居中*/
+            text-align: center;
+            line-height: 29px;
+            font-size: 13.5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="seckill">
+        <a href="dangdangshouyei.html"><p class="seckill1"><img src="../img/huiche.png" width="100%" height="100%"/></p></a>
+        <h1 class="seckill2">秒杀</h1>
+    </div>
+    <ol id="time">
+        <li class="time1">04:00</li>
+        <li class="time1">06:00</li>
+        <li class="time1 aa">08:00</li>
+        <li class="time1">10:00</li>
+        <li class="time1">12:00</li>
+        <li class="time1">已开抢</li>
+        <li class="time1">已开抢</li>
+        <li class="time1 aa">进行中</li>
+        <li class="time1">即将开场</li>
+        <li class="time1">即将开场</li>
+    </ol>
+    <div id="choose">
+        <div class="choose1"><img src="../img/lv.jpg" width="100%" height="100%"/></div>
+        <div class="choose2">
+            <a href="dangdang5.html" style="text-decoration:none;"><div class="choose3">1元秒杀，限量抢购，抢完即止！！</div></a>
+            <div class="choose4">
+                <span class="choose5">
+                    <span class="choose6">
+                        <span class="choose61">￥1</span>
+                        <span class="choose62">￥159</span>
+                    </span>
+                    <span class="choose7">已抢6%</span>
+                </span>
+                <span class="choose8">
+                    <span class="choose9">马上抢</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="choose">
+        <div class="choose1"><img src="../img/qipashu.jpg" width="100%" height="100%"/></div>
+        <div class="choose2">
+            <div class="choose3 ">奇葩说：爱情需要反复讨论</div>
+            <div class="choose4">
+                <span class="choose5">
+                    <span class="choose6">
+                        <span class="choose61">￥29.9</span>
+                        <span class="choose62">￥69.9</span>
+                    </span>
+                    <span class="choose7">已抢12%</span>
+                </span>
+                <span class="choose8">
+                    <span class="choose9">马上抢</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="choose">
+        <div class="choose1"><img src="../img/maoyi1.jpg" width="100%" height="100%"/></div>
+        <div class="choose2">
+            <div class="choose3 ">圣诞小麋鹿红色很仙的圆领毛衣加厚</div>
+            <div class="choose4">
+                <span class="choose5">
+                    <span class="choose6">
+                        <span class="choose61">￥55</span>
+                        <span class="choose62">￥558</span>
+                    </span>
+                    <span class="choose7">已抢12%</span>
+                </span>
+                <span class="choose8">
+                    <span class="choose9">马上抢</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="choose">
+        <div class="choose1"><img src="../img/xiaowangzi.jpg" width="100%" height="100%"/></div>
+        <div class="choose2">
+            <div class="choose3 ">世界名著8册小王子 热门儿童文学</div>
+            <div class="choose4">
+                <span class="choose5">
+                    <span class="choose6">
+                        <span class="choose61">￥24.6</span>
+                        <span class="choose62">￥158.4</span>
+                    </span>
+                    <span class="choose7">已抢13%</span>
+                </span>
+                <span class="choose8">
+                    <span class="choose9">马上抢</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="choose">
+        <div class="choose1"><img src="../img/tuoxie1.jpg" width="100%" height="100%"/></div>
+        <div class="choose2">
+            <div class="choose3 ">泰蜜熊新款家居保暖冬季棉拖鞋</div>
+            <div class="choose4">
+                <span class="choose5">
+                    <span class="choose6">
+                        <span class="choose61">￥8.9</span>
+                        <span class="choose62">￥89.9</span>
+                    </span>
+                    <span class="choose7">已抢13%</span>
+                </span>
+                <span class="choose8">
+                    <span class="choose9">马上抢</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="choose">
+        <div class="choose1"><img src="../img/huili.jpg" width="100%" height="100%"/></div>
+        <div class="choose2">
+            <div class="choose3 ">回力冬季加绒加厚保暖鞋棉鞋雪地靴</span></div>
+            <div class="choose4">
+                <span class="choose5">
+                    <span class="choose6">
+                        <span class="choose61">￥134</span>
+                        <span class="choose62">￥358</span>
+                    </span>
+                    <span class="choose7">已抢15%</span>
+                </span>
+                <span class="choose8">
+                    <span class="choose9">马上抢</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

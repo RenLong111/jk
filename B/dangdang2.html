@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #one{
+            height: 6.7%;
+            border-bottom: solid 1px #E8ECF0;
+            display: flex;
+        }
+        #one .one1{
+            width: 15%;
+            height: 100%;
+            /*border: solid 1px #000000;*/
+        }
+        #one .one2{
+            width: 70%;
+            height: 100%;
+            /*border: solid 1px #000000;*/
+            /*文字大小*/
+            font-size:25px;
+            /*水平方向居中*/
+            text-align: center;
+            /*文字高度*/
+            line-height: 55px;
+        }
+        /*搜索框*/
+        #searchbox{
+            height: 4.5%;
+            display: flex;
+            margin: 10px;
+        }
+        /*输入框*/
+        .inputbox{
+            width: 85%;
+            height: 100%;
+        }
+         input{
+            width: 98%;
+            height: 90%;
+            /*圆角边框*/
+            border-radius: 20px 20px 20px 20px;
+            /*背景色*/
+             background-color: #fcfdff;
+        }
+        /*搜索按钮*/
+        .butten{
+            width: 15%;
+            height: 100%;
+        }
+        /*图框*/
+        #tukuang{
+            list-style: none;
+            height: 45.5%;
+        }
+        #tukuang .tukuang1{
+            height: 33.3%;
+        }
+        /*9.00开抢*/
+        .kaiqaing{
+            height: 8%;
+        }
+        /*优惠券*/
+        #discountcoupon{
+            height: 16.5%;
+            display: flex;
+        }
+        #discountcoupon div{
+            width:50%;
+            height: 100%;
+        }
+        /*活动说明*/
+        #activity{
+            height: 3.5%;
+        }
+        #changxiao{
+            list-style: none;
+            height: 35%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        #changxiao .changxiao1{
+            width: 33.3%;
+            height:50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <span class="one1"><img src="../img/tuige.png" width="100%" height="100%"/></span>
+        <h1 class="one2">百万图书5折封顶</h1>
+        <span class="one1"><img src="../img/shenglou.png" width="100%" height="100%"/></span>
+    </div>
+    <div id="searchbox">
+        <div class="inputbox"><input type="number" laceholder="搜索商品" ></div>
+        <div class="butten"><img src="../img/butten.png" width="90%" height="90%"/></div>
+    </div>
+    <ol id="tukuang">
+        <li class="tukuang1"><img src="../img/nianzhong.jpg" width="100%" height="100%"/></li>
+        <li class="tukuang1"><img src="../img/5zhe.jpg" width="100%" height="100%"/></li>
+        <li class="tukuang1"><img src="../img/VIP.jpg" width="100%" height="100%"/></li>
+    </ol>
+    <p class="kaiqaing"><img src="../img/kaiqaing.png" width="100%" height="100%"/></p>
+    <div id="discountcoupon">
+        <div><img src="../img/youhui100.jpg" width="100%" height="100%"/></div>
+        <div><img src="../img/youhui30.jpg" width="100%" height="100%"/></div>
+    </div>
+    <div id="activity"><img src="../img/huodong1.png" width="100%" height="100%"/></div>
+    <ol id="changxiao">
+        <li class="changxiao1"><img src="../img/changxiao1.jpg" width="100%" height="100%"/></li>
+        <li class="changxiao1"><img src="../img/xinshu.jpg" width="100%" height="100%"/></li>
+        <li class="changxiao1"><img src="../img/xiaoshu.jpg" width="100%" height="100%"/></li>
+        <li class="changxiao1"><img src="../img/tongshu1.jpg" width="100%" height="100%"/></li>
+        <li class="changxiao1"><img src="../img/taozhuang.jpg" width="100%" height="100%"/></li>
+        <li class="changxiao1"><img src="../img/mindian.jpg" width="100%" height="100%"/></li>
+    </ol>
+</body>
+</html>

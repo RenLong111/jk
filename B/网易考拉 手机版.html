@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link href="../css/iconfont.css" type="text/css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #register{
+            width: 100%;
+            height: 45px;
+            border: solid 1px #FFFFFF;
+            float: left;
+        }
+        #register .register{
+            width: 268px;
+            height: 30px;
+            border: solid 2px #FF5000;
+            float: left;
+            margin-left: 10px;
+            margin-top: 5px;
+            line-height: 30px;
+            border-radius: 15px 15px 15px 15px;
+        }
+        #register  .enroll{
+            width: 53px;
+            height: 30px;
+            border: solid 1px #E31436;
+            float: left;
+            margin-left: 20px;
+            margin-top: 5px;
+            font-size: 11px;
+        }
+        #register  .enroll a{
+            text-align: center;
+            text-decoration:none;
+            line-height: 30px;
+            color: #E31436;
+            margin-left: 2px;
+        }
+        p{
+            width: 100%;
+            height: 127px;
+            border: solid 1px #FFFFFF;
+        }
+        h2{
+            width: 100%;
+            height: 22px;
+            border: solid 1px #FFFFFF;
+        }
+        ol{
+            width:100%;
+            height:175px;
+            border: solid 1px #FFFFFF;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        ol li{
+            width: 72px;
+            height: 85px;
+            border: solid 1px #FFFFFF;
+        }
+        h3{
+            width: 100%;
+            height: 86px;
+            border: solid 1px #FFFFFF;
+        }
+        #nowboy{
+            width: 100%;
+            height: 188px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #nowboy .nowboy1{
+            width: 185px;
+            height: 188px;
+            border: solid 1px #FFFFFF;
+        }
+        #nowboy .nowboy2{
+            width: 185px;
+            height: 91px;
+            border: solid 1px #FFFFFF;
+        }
+        h4{
+            width: 100%;
+            height: 140px;
+            border: solid 1px #FFFFFF;
+        }
+        #atitle{
+            width: 100%;
+            height: 87px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #atitle .atitle1{
+            width: 185px;
+            height: 85px;
+            border: solid 1px #FFFFFF;
+        }
+        #xh{
+            width: 100%;
+            height: 109px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #xh .xh1{
+            width: 91px;
+            height: 107px;
+            border: solid 1px #FFFFFF;
+        }
+
+        #xsg{
+            width: 100%;
+            height: 330px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #xsg .bxm{
+            width: 185px;
+            height: 163px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #xsg .bxm .bxm1{
+            width: 185px;
+            height: 40px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            float: left;
+        }
+        #xsg .bxm .bxm2 {
+            width: 90px;
+            height: 120px;
+            border: solid 1px #FFFFFF;
+        }
+        #xsg .bxm .bxm2 .bxm3{
+            width: 90px;
+            height: 90px;
+            border: solid 1px #FFFFFF;
+            float: left;
+        }
+        #xsg .bxm .bxm2 .bxm4{
+            width: 90px;
+            height: 28px;
+            border: solid 1px #FFFFFF;
+            float: left;
+        }
+        #xsg .bxm .bxm2 .bxm4 .jiage{
+            color: red;
+            margin-left: 20px;
+            font-size:15px;
+        }
+        #xsg .bxm .bxm1 .youhui{
+            /*文本缩进*/
+            text-indent: 10px;
+            /*字体加粗*/
+            font-weight: 800;
+            /*字体变大*/
+            font-size:20px;
+            /*当前元素垂直*/
+            line-height: 40px
+        }
+        #xsg .bxm .bxm1 .youhui1{
+            color: grey;
+            text-indent: 8px;
+            font-size:11px;
+            line-height: 40px
+        }
+
+        h5{
+        width: 100%;
+        height: 64px;
+        border: solid 1px #FFFFFF;
+        }
+        #xd{
+            width: 100%;
+            height: 500px;
+            border: solid 1px #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #xd .xd1{
+            width: 185px;
+            height: 247px;
+            border: solid 1px #FFFFFF;
+            float: left;
+        }
+        #xd .xd1 .xd11{
+            width: 182px;
+            height: 170px;
+            border: solid 1px #FFFFFF;
+            float: left;
+        }
+        #xd .xd1 .xd2{
+            width: 182px;
+            height: 75px;
+            border: solid 1px #FFFFFF;
+            float: left;
+        }
+        #xd .xd1 .xd2 .xd21{
+            width: 182px;
+            height: 45px;
+            border: solid 1px #FFFFFF;
+            float: left;
+            /*超出部分隐藏*/
+            overflow: hidden;
+            /*超出部分省略号 */
+            text-overflow: ellipsis;
+            /*!*文本空白不换行*!*/
+            /*white-space: nowrap;*/
+            font-size: 15px;
+        }
+        #xd .xd1 .xd2 .xd22{
+            width: 182px;
+            height: 24px;
+            border: solid 1px #FFFFFF;
+            float: left;
+            color: red;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+     <div id="register">
+         <div class="register" ><span class="iconfont">&#xe63c;</span><input type="number" placeholder="ahc套装" style="border: none"></div>
+         <div class="enroll" ><a href="https://www.baidu.com">登录/注册</a></div>
+         <div style="clear: right"></div>
+     </div>
+     <p><img src="../img/wb.webp" width="375" height="82"/></p>
+     <!--<img src="../img/wb.webp" width="375" height="108"/>-->
+     <h2 ><img src="../img/kl.webp" width="375" height="24"/></h2>
+     <ol>
+         <li><img src="../img/mz.png" width="73" height="85"/></li>
+         <li><img src="../img/my.png" width="73" height="85"/></li>
+         <li><img src="../img/qs.png" width="73" height="85"/></li>
+         <li><img src="../img/bj.png" width="73" height="85"/></li>
+         <li><img src="../img/sm.png" width="73" height="85"/></li>
+         <li><img src="../img/fs.png" width="73" height="85"/></li>
+         <li><img src="../img/sh.png" width="73" height="85"/></li>
+         <li><img src="../img/hw.png" width="73" height="85"/></li>
+         <li><img src="../img/qq.png" width="73" height="85"/></li>
+         <li><img src="../img/hy.png" width="73" height="85"/></li>
+     </ol>
+     <h3><img src="../img/xr.webp" width="375" height="85"/></h3>
+     <div id="nowboy">
+         <div class="nowboy1"><img src="../img/jm.gif" width="187" height="198"/></div>
+         <div class="nowboy1">
+             <div class="nowboy2"><img src="../img/pay.gif" width="187" height="93"/></div>
+             <div class="nowboy2"><img src="../img/jk.webp" width="187" height="93"/></div>
+         </div>
+     </div>
+     <h4><img src="../img/s12.gif" width="373" height="140"/></h4>
+     <div id="atitle">
+             <div class="atitle1"><img src="../img/mr.webp" width="185" height="85"/></div>
+             <div class="atitle1"><img src="../img/gf.webp" width="185" height="85"/></div>
+     </div>
+
+     <div id="xh">
+         <div class="xh1"><img src="../img/gr.gif" width="93" height="107"/></div>
+         <div class="xh1"><img src="../img/gc.gif" width="93" height="107"/></div>
+         <div class="xh1"><img src="../img/qx.gif" width="93" height="107"/></div>
+         <div class="xh1"><img src="../img/nf.gif" width="93" height="107"/></div>
+     </div>
+     <div id="xsg">
+         <div class="bxm">
+             <div class="bxm1">
+                 <div class="youhui">限时购<span class="youhui1">01:38:54 &nbsp:16:00场</span>
+                 </div >
+             </div>
+             <div class="bxm2">
+                 <div class="bxm3"><img src="../img/lh.png" width="80" height="80"/></div>
+                 <div class="bxm4"><span class="jiage">￥88</span></div>
+             </div>
+             <div class="bxm2">
+                 <div class="bxm3"><img src="../img/ziran.png" width="80" height="80"/></div>
+                 <div class="bxm4"><span class="jiage">￥45</span></div>
+             </div>
+         </div>
+         <div class="bxm">
+             <div class="bxm1">
+                 <div class="youhui">必买清单<span class="youhui1">什么都值得买</span>
+                 </div>
+             </div>
+             <div class="bxm2"><img src="../img/free.webp" width="80" height="80"/></div>
+             <div class="bxm2"><img src="../img/crea.webp" width="80" height="80"/></div>
+         </div>
+         <div class="bxm">
+             <div class="bxm1">
+                 <div class="youhui">考拉奥莱<span class="youhui1">大牌5折清仓</span>
+                 </div>
+             </div>
+             <div class="bxm2"><img src="../img/sk2.webp" width="80" height="80"/></div>
+             <div class="bxm2"><img src="../img/kouhong.webp" width="80" height="80"/></div>
+         </div>
+         <div class="bxm">
+             <div class="bxm1">
+                 <div class="youhui">好物推荐<span class="youhui1">999+好评已种草</span>
+                 </div>
+             </div>
+             <div class="bxm2"><img src="../img/sk-2.webp" width="80" height="80"/></div>
+             <div class="bxm2"><img src="../img/lv.webp" width="80" height="80"/></div>
+         </div>
+     </div>
+     <h5><img src="../img/wntj.png" width="375" height="62"/></h5>
+     <div id="xd">
+         <div class="xd1">
+             <div class="xd11"><img src="../img/b.webp" width="180" height="168"/></div>
+             <div class="xd2">
+                 <div class="xd21">
+                     <div >【硬核爆款】【专柜同款·山茶花】COACH 蔻驰 女包PARKER系列山茶花时尚拼色单肩包斜挎包</div>
+                 </div>
+                 <div class="xd22">￥1699</div>
+             </div>
+         </div>
+         <div class="xd1">
+             <div class="xd11"><img src="../img/swisse.webp" width="180" height="168"/></div>
+             <div class="xd2">
+                 <div class="xd21">
+                     <div >Swisse 奶蓟草营养片护肝片 200粒/瓶【拯救熬夜的肝】</div>
+                 </div>
+                 <div class="xd22">￥209</div>
+             </div>
+         </div>
+         <div class="xd1">
+             <div class="xd11"><img src="../img/lv3.webp" width="180" height="168"/></div>
+             <div class="xd2">
+                 <div class="xd21">
+                     <div >【3件装 2种可选】Ryo 吕 棕吕 防脱固发滋养洗发水组合/洗护组合 500ml/瓶</div>
+                 </div>
+                 <div class="xd22">￥105</div>
+             </div>
+         </div>
+         <div class="xd1">
+             <div class="xd11"><img src="../img/baowen.webp" width="180" height="168"/></div>
+             <div class="xd2">
+                 <div class="xd21">
+                     <div >【迷你入包款】THERMOS膳魔师超轻小巧精致真空保温杯350毫升</div>
+                 </div>
+                 <div class="xd22">￥179</div>
+             </div>
+         </div>
+     </div>
+</body>
+</html>
